@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Tailwind</title>
+    <link rel="stylesheet" href="/dist/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <header
+        class="absolute top-0 left-0 flex flex-wrap items-center justify-between w-full py-4 text-white transition lg:px-20 px-7 font-poppins">
+        <div class="title font-bold text-2xl text-[#00c4ff]"><a href="index.html">SIPKTA</a></div>
+        <button class="hamburger hamburger--collapse" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+        <nav
+            class="lg:block lg:static  md:static absolute top-full right-7 md:block sm:hidden hidden md:w-[50%] lg:w-[40%] w-[60%] lg:bg-transparent md:bg-transparent bg-[#00c4ff] lg:rounded-none md:rounded-none rounded-lg ">
+            <ul class="justify-between block px-3 py-5 lg:flex md:flex w-100 lg:py-0 lg:px-0 md:py-0 md:px-0">
+                <li class="hover:bg-[#00c4ff] py-2 px-4 transition rounded-full group">
+                    <a href="index.html"
+                        class="text-white transition lg:text-[#00c4ff] md:text-[#00c4ff] lg:group-hover:text-white md:group-hover:text-white group-hover:text-slate-300">Beranda</a>
+                </li>
+                <li class="hover:bg-[#00c4ff] py-2 px-4 transition rounded-full group">
+                    <a href="about.html"
+                        class="text-white lg:text-[#00c4ff] md:text-[#00c4ff] transition lg:group-hover:text-white md:group-hover:text-white group-hover:text-slate-300">About</a>
+                </li>
+                <li class="hover:bg-[#00c4ff] py-2 px-4 transition rounded-full group">
+                    <a href="register.html"
+                        class="text-white lg:text-[#00c4ff] md:text-[#00c4ff] transition lg:group-hover:text-white md:group-hover:text-white group-hover:text-slate-300">Register</a>
+                </li>
+                <li class="bg-[#00c4ff] lg:py-2 lg:px-7 md:py-2 md:px-7 px-4 py-2 transition rounded-full group">
+                    <a href="login.html" class="text-white transition hover:text-slate-300 ">Login</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="block hamburger-menu lg:hidden md:hidden sm:block">
+            <span class="transition duration-300 origin-top-left hamburger-line"></span>
+            <span class="transition duration-300 hamburger-line"></span>
+            <span class="transition duration-300 origin-bottom-left hamburger-line"></span>
+        </div>
+    </header>
+
+    <section class="pb-6 text-white pt-11 section-statistic">
+        <div class="container w-full h-full mx-auto lg:px-20 px-7 lg:max-w-full md:max-w-full sm:max-w-full">
+
+            <div class="login lg:w-[800px] w-full  mx-auto  p-4 rounded-xl flex flex-wrap">
+                <div class="w-full mx-auto lg:w-1/2">
+                    <div class="flex flex-col justify-center min-h-full px-0 py-12 lg:px-8">
+                        <div class="sm:mx-auto sm:w-full sm:max-w-sm">
+                            <img class="w-auto h-10 mx-auto"
+                                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                                alt="Your Company">
+                            <h2 class="mt-10 text-2xl font-bold leading-9 tracking-tight text-center text-[#00c4ff]">
+                                Daftar Sebelum Melapor
+                            </h2>
+                        </div>
+
+                        <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+                            <form class="space-y-6" action="#" method="POST">
+                                <div>
+                                    <label for="email"
+                                        class="block text-sm font-medium leading-6 text-[#00c4ff]">Username</label>
+                                    <div class="mt-2">
+                                        <input id="text" name="email" type="email" autocomplete="email" required
+                                            class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#00c4ff] sm:text-sm sm:leading-6">
+                                    </div>
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-sm font-medium leading-6 text-[#00c4ff]">Email
+                                        address</label>
+                                    <div class="mt-2">
+                                        <input id="email" name="email" type="email" autocomplete="email" required
+                                            class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#00c4ff] sm:text-sm sm:leading-6">
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="flex items-center justify-between">
+                                        <label for="password"
+                                            class="block text-sm font-medium leading-6 text-[#00c4ff]">Password</label>
+                                    </div>
+                                    <div class="mt-2">
+                                        <input id="password" name="password" type="password"
+                                            autocomplete="current-password" required
+                                            class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#00c4ff] sm:text-sm sm:leading-6">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex items-center justify-between">
+                                        <label for="password"
+                                            class="block text-sm font-medium leading-6 text-[#00c4ff]">Re-type
+                                            Password</label>
+                                    </div>
+                                    <div class="mt-2">
+                                        <input id="password" name="password" type="password"
+                                            autocomplete="current-password" required
+                                            class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#00c4ff] sm:text-sm sm:leading-6">
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <button type="submit"
+                                        class="flex w-full justify-center rounded-md bg-[#00c4ff] px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-[#00b1e6] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Daftar</button>
+                                </div>
+                            </form>
+
+                            <p class="mt-10 text-sm text-center text-gray-500">
+                                Belum punya akun?
+                                <a href="#" class="font-semibold leading-6 text-[#00c4ff] ">Registrasi</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <footer class="w-full px-3 py-4 text-center text-slate-500">
+        ©Copyright SIPKTA 2023
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/myscript.js"></script>
+
+</body>
+
+</html>
